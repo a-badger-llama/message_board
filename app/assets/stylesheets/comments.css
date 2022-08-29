@@ -16,26 +16,30 @@
 }
 
 .comment__input {
-  background-color: #3a3b3c;
+  background-color: var(--light-grey);
   border: none;
+  border-radius: 15px 0 0 15px;
+  color: var(--light);
+  padding: .5em 1em;
   width: 80%;
 }
 
 .comment__submit {
   width: 15%;
-  background-color: #7cacf8;
+  background-color: var(--brand);
   border: none;
-  border-radius: 5px;
+  border-radius: 0 15px 15px 0;
+  padding: .5em 1em;
 }
 
 /* COMMENT */
 .comment {
-  background-color: #ccc;
+  background-color: var(--light-grey);
   margin: 5px 10%;
-  padding: .5em .5em;
+  padding: .5em 1em;
   display: inline-block;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .comment__author {

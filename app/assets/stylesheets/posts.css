@@ -1,12 +1,12 @@
 .posts {
-  border: 1px dashed black;
-  width: 40vw;
-  min-height: 100vh;
   margin: 0 auto;
+  min-height: 100vh;
+  width: 40vw;
 }
 
 .post {
-  background-color: #242526;
+  background-color: var(--dark-grey);
+  border-radius: 10px;
   position: relative;
   border: 1px solid black;
   margin-bottom: 2em;
@@ -21,7 +21,7 @@
 }
 
 .post__details {
-  margin-left: 2em;
+  margin: 1em;
 }
 
 .post__title {
@@ -29,9 +29,14 @@
   padding: 10px;
 }
 
-.post__body {
-  background-color: #ccc;
+.post__content {
+  background-color: var(--light);
+  color: #242526;
   padding: 1em;
+}
+
+.post__content p {
+  color: inherit;
 }
 
 .post__form {
