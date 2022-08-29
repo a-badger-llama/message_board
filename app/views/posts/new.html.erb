@@ -1,0 +1,12 @@
+<div class="post">
+  <h3>Say what's on your mind:</h3>
+
+  <div class="post__form">
+    <%= form_for(@post) do |f| %>
+      <%= f.text_field(:title) %>
+      <%= f.text_area(:body) %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
+

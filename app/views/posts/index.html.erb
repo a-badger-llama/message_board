@@ -1,0 +1,54 @@
+<h1>The Bored Group</h1>
+
+<div class="posts">
+<!--  <div class="post__container">-->
+<!--    <div class="post">-->
+<!--      <h2 class="post__title">Speak your mind</h2>-->
+
+      <%#= form_for(Post.new, html: { class: "post__form" }) do |f| %>
+        <%#= f.text_field(:title, class: "post__input post__title", placeholder: "the Headline") %>
+        <%#= f.text_area(:body, class: "post__input post__body", placeholder: "rant a little...") %>
+
+        <%#= f.submit(class: "button") %>
+      <%# end %>
+<!--    </div>-->
+<!--  </div>-->
+
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2 class="post__title"><%= post.title %></h2>
+      <div class="post__details">
+        <a class="post__author"><%= post.user.name %></a>
+        <span class="timestamp"><%= post.created_at %></span>
+      </div>
+
+      <% if post.body.present? %>
+        <div class="post__body">
+          <p><%= post.body %></p>
+        </div>
+      <% end %>
+
+      <div class="comments">
+        <h3 class="comments__title">Comments</h3>
+
+        <div class="comment__form">
+          <%= form_for(Comment.new) do |f| %>
+            <%= f.hidden_field(:post_id, value: post.id) %>
+            <%= f.text_field(:body, class: "comment__input") %>
+            <%= f.submit("Say it", class: "comment__submit") %>
+          <% end %>
+        </div>
+
+        <% post.comments.order(created_at: :desc).limit(10).each do |comment| %>
+          <div class="comment__container">
+            <span class="comment">
+              <span class="comment__author"><%= comment.user.name %></span><br>
+              <span class="comment__body"><%= comment.body %></span><br>
+              <span class="timestamp"><%= comment.created_at %></span>
+            </span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,44 @@
+.comments {
+  max-height: 300px;
+}
+
+.comments__title {
+  font-size: 2em;
+  text-align: center;
+  margin: 5px;
+}
+
+/* FORM STYLES */
+.comment__form {
+  width: 75%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.comment__input {
+  background-color: #3a3b3c;
+  border: none;
+  width: 80%;
+}
+
+.comment__submit {
+  width: 15%;
+  background-color: #7cacf8;
+  border: none;
+  border-radius: 5px;
+}
+
+/* COMMENT */
+.comment {
+  background-color: #ccc;
+  margin: 5px 10%;
+  padding: .5em .5em;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.comment__author {
+  font-style: italic;
+  overflow: hidden;
+}

@@ -1,0 +1,44 @@
+.posts {
+  border: 1px dashed black;
+  width: 40vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.post {
+  background-color: #242526;
+  position: relative;
+  border: 1px solid black;
+  margin-bottom: 2em;
+  max-height: 40vw;
+  overflow: scroll;
+}
+
+.post__author {
+  font-size: 1.25em;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.post__details {
+  margin-left: 2em;
+}
+
+.post__title {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.post__body {
+  background-color: #ccc;
+  padding: 1em;
+}
+
+.post__form {
+  height: 100%;
+}
+
+.post__input {
+  width: 100%;
+  border: none;
+}
