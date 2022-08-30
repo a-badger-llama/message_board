@@ -27,35 +27,6 @@ textarea {
   border: none;
 }
 
-/* COMPONENTS */
-.button {
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  display: block;
-  padding: .5rem 1rem;
-}
-
-/* COLOR UTIILITIES */
-.bc-brand {
-  background-color: var(--brand);
-}
-.bc-sbrand {
-  background-color: var(--brand-second);
-}
-.bc-dark {
-  var(--dark);
-}
-.bc-dark-grey {
-  var(--dark-grey);
-}
-.bc-light-grey {
-  var(--light-grey);
-}
-.bc-light {
-  var(--light);
-}
-
 .logo {
   display: inline-block;
 }

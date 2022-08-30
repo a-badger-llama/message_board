@@ -7,3 +7,23 @@
   --brand-second: #3a2176;
   --brand-third: #3a2176;
 }
+
+/* COLOR UTILITIES */
+.bc-brand {
+  background-color: var(--brand);
+}
+.bc-sbrand {
+  background-color: var(--brand-second);
+}
+.bc-dark {
+  var(--dark);
+}
+.bc-dark-grey {
+  var(--dark-grey);
+}
+.bc-light-grey {
+  var(--light-grey);
+}
+.bc-light {
+  var(--light);
+}

@@ -1,5 +1,5 @@
-<div class="account">
-  <h1 class="account__title">Account Details</h1>
+<div class="account card">
+  <h1 class="account__title card__title">Account Details</h1>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
@@ -33,10 +33,9 @@
   <% end %>
 
   <%= button_to(
-        "Cancel my account",
-        registration_path(resource_name),
+        "Log out",
+        destroy_user_session_path,
         class: "account__button button",
-        data: { confirm: "Are you sure?" },
         method: :delete
       ) %>
 </div>

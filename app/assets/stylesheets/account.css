@@ -1,10 +1,7 @@
 .account {
-  margin: 15px auto;
+  margin: 10px auto;
   min-height: 50vh;
   width: 40vw;
-  background-color: var(--dark-grey);
-  border-radius: 10px;
-  position: relative;
 }
 
 .account__title {

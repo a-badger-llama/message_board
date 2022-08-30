@@ -1,1 +1,48 @@
-/* UTILITY COMPONENTS */
+.board {
+  margin: 10px auto;
+  min-height: 100vh;
+  width: 40vw;
+}
+
+/* FORMS*/
+.button {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  padding: .5rem 1rem;
+}
+.field {
+  margin: 10px auto;
+  text-align: center;
+  width: 85%
+}
+
+/* CARD */
+.card {
+  background-color: var(--dark-grey);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 2em;
+  max-height: 40vw;
+  overflow: scroll;
+}
+.card__header {
+  font-size: 1.25em;
+  font-style: italic;
+  margin: 1rem;
+  overflow: hidden;
+}
+.card__content {
+  padding: 1em;
+}
+.card__footer {
+  padding: 10px 0;
+}
+.card__submit {
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+}
+
+

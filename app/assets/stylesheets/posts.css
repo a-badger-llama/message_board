@@ -1,27 +1,9 @@
-.posts {
-  margin: 10px auto;
-  min-height: 100vh;
-  width: 40vw;
-}
+.posts {}
+.post {}
 
-.post {
-  background-color: var(--dark-grey);
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 2em;
-  max-height: 40vw;
-  overflow: scroll;
-}
+.post__author {}
 
-.post__author {
-  font-size: 1.25em;
-  font-style: italic;
-  overflow: hidden;
-}
-
-.post__details {
-  margin: 1em;
-}
+.post__details {}
 
 .post__title {
   font-size: 2rem;
@@ -31,7 +13,6 @@
 .post__content {
   background-color: var(--light);
   color: #242526;
-  padding: 1em;
 }
 
 .post__content p {

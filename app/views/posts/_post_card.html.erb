@@ -1,0 +1,36 @@
+<div class="post card">
+  <div class="post__details card__header">
+    <a class="post__author"><%= post.user.name %></a>
+    <span class="timestamp"><%= time_ago_in_words(post.created_at) %> ago</span>
+  </div>
+
+  <div class="post__content card__content">
+    <h2 class="post__title"><%= link_to(post.title, post) %></h2>
+
+    <% if post.body.present? %>
+      <p><%= post.body %></p>
+    <% end %>
+  </div>
+
+  <div class="comments">
+    <h3 class="comments__title">Comments</h3>
+
+    <div class="comment__form">
+      <%= form_for(Comment.new) do |f| %>
+        <%= f.hidden_field(:post_id, value: post.id) %>
+        <%= f.text_field(:body, class: "comment__input", placeholder: "What do you think about that?") %>
+        <%= f.submit("Say it!", class: "comment__submit button bc-brand") %>
+      <% end %>
+    </div>
+
+    <% comments.order(created_at: :desc).each do |comment| %>
+      <div class="comment__container">
+        <span class="comment">
+          <span class="comment__author"><%= comment.user.name %></span><br>
+          <span class="comment__body"><%= comment.body %></span><br>
+          <span class="timestamp"><%= time_ago_in_words(comment.created_at) %> ago</span>
+        </span>
+      </div>
+    <% end %>
+  </div>
+</div>

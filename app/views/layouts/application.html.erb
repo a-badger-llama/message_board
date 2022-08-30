@@ -10,9 +10,6 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
     <nav class="navbar">
       <%= link_to("the Bored Group", root_path, class: "navbar__logo logo") %>
 
@@ -29,6 +26,8 @@
         </li>
       </ul>
     </nav>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
   </body>

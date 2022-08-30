@@ -1,0 +1,13 @@
+.footer-links {
+  display: flex;
+  text-align: center;
+}
+
+.footer-link {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.footer-link:not(:last-child) {
+  border-right: solid 1px white;
+}
