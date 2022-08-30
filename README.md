@@ -2,6 +2,8 @@
 
 Welcome to the git repository for my message board!
 
+View it live at [here](https://foxy-message-board.herokuapp.com)
+
 To get this application running locally, you will need the following:
 
 ### Ruby version:
