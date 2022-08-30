@@ -1,6 +1,9 @@
 class CommentsController < ApplicationController
-  def new
-  end
+  # def index
+  # end
+  #
+  # def new
+  # end
 
   def create
     @comment = Comment.new(comment_params.merge(user: current_user))
@@ -8,32 +11,29 @@ class CommentsController < ApplicationController
     if @comment.save
       flash[:notice] = "Comment created successfully"
 
-      redirect_back fallback_location: posts_path(params: { post: @comment.post.id })
+      redirect_back fallback_location: posts_path
     else
       flash[:alert] = "There was a problem saving the comment"
 
-      redirect_back fallback_location: new_comment_path
+      redirect_back fallback_location: posts_path
     end
   end
 
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-
-  def index
-  end
+  # def show
+  # end
+  #
+  # def edit
+  # end
+  #
+  # def update
+  # end
+  #
+  # def destroy
+  # end
 
   private
 
   def comment_params
-    params.require(:comment).permit(:body, :post_id)
+    params.require(:comment).permit(:body, :commentable_id, :commentable_type)
   end
 end

@@ -17,7 +17,8 @@
 
     <div class="comment__form">
       <%= form_for(Comment.new) do |f| %>
-        <%= f.hidden_field(:post_id, value: post.id) %>
+        <%= f.hidden_field(:commentable_type, value: post.class.name) %>
+        <%= f.hidden_field(:commentable_id, value: post.id) %>
         <%= f.text_field(:body, class: "comment__input", placeholder: "What do you think about that?") %>
         <%= f.submit("Say it!", class: "comment__submit button bc-brand") %>
       <% end %>
