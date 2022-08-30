@@ -1,18 +1,18 @@
-<h1>The Bored Group</h1>
-
 <div class="posts">
-<!--  <div class="post__container">-->
-<!--    <div class="post">-->
-<!--      <h2 class="post__title">Speak your mind</h2>-->
+  <div class="post">
+    <div class="post__details">
+      <a class="post__author"><%= current_user.name %></a> says:
+    </div>
 
-      <%#= form_for(Post.new, html: { class: "post__form" }) do |f| %>
-        <%#= f.text_field(:title, class: "post__input post__title", placeholder: "the Headline") %>
-        <%#= f.text_area(:body, class: "post__input post__body", placeholder: "rant a little...") %>
+    <%= form_for(Post.new) do |f| %>
+      <div class="post__content">
+        <%= f.text_field(:title, class: "post__input post__title", placeholder: "the Headline") %>
+        <%= f.text_area(:body, class: "post__input", placeholder: "rant a little...") %>
+      </div>
 
-        <%#= f.submit %>
-      <%# end %>
-<!--    </div>-->
-<!--  </div>-->
+      <%= f.submit(class: "post__submit button bc-brand") %>
+    <% end %>
+  </div>
 
   <% @posts.each do |post| %>
     <div class="post">
@@ -36,7 +36,7 @@
           <%= form_for(Comment.new) do |f| %>
             <%= f.hidden_field(:post_id, value: post.id) %>
             <%= f.text_field(:body, class: "comment__input", placeholder: "What do you think about that?") %>
-            <%= f.submit("Say it!", class: "comment__submit") %>
+            <%= f.submit("Say it!", class: "comment__submit button bc-brand") %>
           <% end %>
         </div>
 

@@ -13,6 +13,23 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <nav class="navbar">
+      <%= link_to("the Bored Group", root_path, class: "navbar__logo logo") %>
+
+      <ul class="navbar__items">
+        <li class="navbar__item">
+          <%= link_to(root_path) do |ni| %>
+            <span>Home</span>
+          <% end %>
+        </li>
+        <li class="navbar__item">
+          <%= link_to(edit_user_registration_path) do |ni| %>
+            <span>Account</span>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

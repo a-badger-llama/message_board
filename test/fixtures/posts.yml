@@ -1,9 +1,29 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: posts
+#
+#  id         :bigint           not null, primary key
+#  body       :text             not null
+#  title      :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  user_id    :bigint           not null
+#
+# Indexes
+#
+#  index_posts_on_user_id  (user_id)
+#
 
-one:
-  title: MyString
-  body: MyText
-
-two:
-  title: MyString
-  body: MyText
+morty_hello_world:
+  user: morty
+  title: Hello World
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. Sit amet commodo nulla facilisi nullam
+    vehicula ipsum. Massa enim nec dui nunc mattis enim ut tellus elementum. Metus vulputate
+    eu scelerisque felis imperdiet proin fermentum leo. Vel turpis nunc eget lorem dolor sed.
+    At tempor commodo ullamcorper a lacus vestibulum sed. Justo nec ultrices dui sapien eget mi.
+    Sem et tortor consequat id porta nibh venenatis cras sed. Est lorem ipsum dolor sit amet
+    consectetur. Sapien eget mi proin sed libero enim sed faucibus turpis. Semper risus
+    in hendrerit gravida rutrum. Felis donec et odio pellentesque diam volutpat commodo
+    sed egestas. Congue quisque egestas diam in arcu cursus euismod quis viverra. Sed elementum
+    tempus egestas sed sed risus pretium. Viverra adipiscing at in tellus.

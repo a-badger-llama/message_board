@@ -1,0 +1,42 @@
+.account {
+  margin: 15px auto;
+  min-height: 50vh;
+  width: 40vw;
+  background-color: var(--dark-grey);
+  border-radius: 10px;
+  position: relative;
+}
+
+.account__title {
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.account__field {
+  margin: 10px auto;
+  text-align: center;
+  width: 85%
+}
+
+.account__field label {
+  background-color: var(--brand);
+  border: none;
+  border-radius: 15px 0 0 15px;
+  display: inline-block;
+  line-height: normal;
+  padding: .5rem 1rem;
+  text-align: right;
+  width: 35%;
+}
+
+.account__field input {
+  border-radius: 0 15px 15px 0;
+  display: inline-block;
+  width: 50%;
+}
+
+.account__button {
+  margin: 10px auto;
+  width: 50%;
+}

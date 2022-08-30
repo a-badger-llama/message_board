@@ -16,20 +16,14 @@
 }
 
 .comment__input {
-  background-color: var(--light-grey);
-  border: none;
   border-radius: 15px 0 0 15px;
-  color: var(--light);
-  padding: .5em 1em;
   width: 80%;
 }
 
-.comment__submit {
+/* added .button for specificity */
+.comment__submit.button {
   width: 15%;
-  background-color: var(--brand);
-  border: none;
   border-radius: 0 15px 15px 0;
-  padding: .5em 1em;
 }
 
 /* COMMENT */

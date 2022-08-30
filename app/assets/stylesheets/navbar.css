@@ -1,0 +1,37 @@
+.navbar {
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.navbar__logo {
+  color: var(--brand);
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+.navbar__items {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.navbar__item a {
+  align-items: inherit;
+  cursor: pointer;
+  display: inherit;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.navbar__item a:hover {
+  background-color: var(--light-grey);
+}

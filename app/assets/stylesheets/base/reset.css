@@ -48,18 +48,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-input {
+input, textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-
 html {
   box-sizing: border-box;
   color: var(--light);
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+textarea {
+  resize: none;
+}
+input:focus, textarea:focus {
+  outline: none;
 }

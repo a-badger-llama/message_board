@@ -1,7 +1,21 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: comments
+#
+#  id               :bigint           not null, primary key
+#  body             :text             not null
+#  commentable_type :string           not null
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  commentable_id   :bigint           not null
+#  user_id          :bigint           not null
+#
+# Indexes
+#
+#  index_comments_on_user_id  (user_id)
+#
 
-one:
-  body: MyText
-
-two:
-  body: MyText
+rick_morty_hello_world:
+  user: rick
+  commentable: morty_hello_world (Post)
+  body: Never gonna give you up
