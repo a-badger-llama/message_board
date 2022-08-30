@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the git repository for my message board!
 
-Things you may want to cover:
+To get this application running locally, you will need the following:
 
-* Ruby version
+### Ruby version:
+* `3.1.2`
 
-* System dependencies
+### System dependencies:
+* postgresql installed `brew install postgresql`
 
-* Configuration
+### Database creation:
+* `bundle exec rake db:setup` and insert some data using `bundle exec rake db:fixtures:load` 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### How to run the tests:
+* `bundle exec rspec`
